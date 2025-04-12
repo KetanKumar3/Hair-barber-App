@@ -124,10 +124,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     marginTop: 20,
-    marginBottom: 10,
+
   },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   viewAllText: {
@@ -174,6 +174,7 @@ container4: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingHorizontal: 10,
+    marginTop:20,
   },
   serviceItem: {
     width: '45%', // Adjust as needed for spacing
@@ -218,6 +219,7 @@ listContent: {
      borderRadius:20,
         borderColor:"#e0e0e0",
         borderWidth:2,
+        marginTop:10,
   },
   image3: {
     width: 100,

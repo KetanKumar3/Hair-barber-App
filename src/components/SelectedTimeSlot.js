@@ -60,6 +60,8 @@ const SelectedTimeSlot = () => {
               todayTextColor: 'black',
               selectedDayTextColor: 'black',
               selectedDayBackgroundColor: 'white',
+              textMonthFontWeight: 'bold',
+              textMonthColor: 'white',
               dayContainer: {
                 height: 40,
                 alignItems: 'center',
@@ -97,12 +99,12 @@ const SelectedTimeSlot = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    paddingTop: 30,
     paddingHorizontal: 10,
   },
   calendar: {
     borderRadius: 15,
-    height: 350,
+    height: 340,
     padding: 10,
   },
   timeSlotsHeader: {
@@ -115,6 +117,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
+    marginBottom:20,
   },
   timeSlot: {
     borderWidth: 2,

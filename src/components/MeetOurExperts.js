@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 2,
     borderColor: '#ccc',
-    padding: 15,
+    padding: 10,
     marginBottom: 20,
     flexDirection: 'row',
   },
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
     borderColor: 'blue',
   },
   image: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     borderRadius: 50,
   },
   name: {

@@ -60,7 +60,7 @@ return(
 
 const styles = StyleSheet.create({
 container: {
-    borderWidth: 3,
+    borderWidth: 2,
     borderColor: '#E0E3E7',
     borderRadius: 20,
     flexDirection: 'row',
@@ -76,7 +76,7 @@ container: {
       backgroundColor: '#F1F4F8',
     },
     title: {
-      fontSize: 20,
+      fontSize: 18,
       fontWeight: 'bold',
       marginLeft: 25,
     },

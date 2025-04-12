@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   },
   expertsList: {
     marginLeft: 20,
-    marginBottom: 120,
+    marginBottom: 10,
     marginVertical: 10,
   },
   bookNowButton: {

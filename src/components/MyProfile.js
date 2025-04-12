@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
     marginTop: 20, // Add some space between image and details
   },
   detailContainer: {
-    padding: 15,
-    borderWidth: 3,
+    padding: 10,
+    borderWidth: 2,
     borderColor: '#E0E3E7',
     borderRadius: 20,
     marginHorizontal: 20,

@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Booking = () => {
   return (
   <View style={{backgroundColor:"white",flex:1,}}>
-  <Text style={{textAlign:"center",fontSize:22,fontWeight:"bold",marginTop:40}}>My Bookings</Text>
+  <Text style={{textAlign:"center",fontSize:22,fontWeight:"bold",marginTop:30}}>My Bookings</Text>
     <View style={styles.container}>
 
       <View style={styles.serviceContainer}>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   container: {
     marginTop:20,
     padding: 20,
-    borderWidth:4,
+    borderWidth:3,
 
     borderColor: '#E0E3E7',
     borderRadius: 20,
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   successText: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize:12,
   },
   confirmationContainer: {
     flexDirection:'row',
@@ -93,7 +94,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   value: {
-    fontSize: 16,
+    fontSize: 13,
   },
 });
 

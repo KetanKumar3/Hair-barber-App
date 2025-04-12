@@ -37,7 +37,7 @@ const navigation = useNavigation();
           ),
           headerRight: () => (
              <TouchableOpacity style={styles.headerRightContainer} onPress={() => navigation.navigate('Notifications')}>
-                  <Ionicons name="notifications" size={24} color="black" />
+                  <Ionicons name="notifications" size={20} color="black" />
              </TouchableOpacity>
           ),
           tabBarIcon: ({ focused }) => (

@@ -29,58 +29,59 @@ const BottomSheet = ({navigateToReview}) => {
 
 const styles = StyleSheet.create({
   bottomSheetContainer: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'white',
-    height: 200,
-    width: '100%',
-    borderTopLeftRadius: 30,
-    borderTopRightRadius: 30,
-    padding: 20, // Add padding for better spacing
-  },
-  inputs: {
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      backgroundColor: 'white',
+      height: 200,
+      width: '100%',
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
+      padding: 20,
+    },
+    inputs: {
       borderWidth: 1,
       borderColor: '#ccc',
       borderRadius: 5,
       padding: 10,
       marginBottom: 10,
-      marginTop:15,
+      marginTop: 15,
+      color: 'black', // Add color style
     },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    padding: 10,
-    marginBottom: 10,
-
-  },
-  buttonRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-around', // Distribute buttons evenly
-    marginTop: 10, // Add some space between inputs and buttons
-  },
-  cancelButton: {
-    backgroundColor: 'red', // Light gray background
-    padding: 10,
-    borderRadius: 5,
-    flex: 1,
-    alignItems: 'center',
-    marginHorizontal:5,
-  },
-  doneButton: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
-    flex: 1,
-    alignItems: 'center',
-    marginHorizontal:5,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize:18,
-  },
+    input: {
+      borderWidth: 1,
+      borderColor: '#ccc',
+      borderRadius: 5,
+      padding: 10,
+      marginBottom: 10,
+      color: 'black', // Add color style
+    },
+    buttonRow: {
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginTop: 10,
+    },
+    cancelButton: {
+      backgroundColor: 'red',
+      padding: 10,
+      borderRadius: 5,
+      flex: 1,
+      alignItems: 'center',
+      marginHorizontal: 5,
+    },
+    doneButton: {
+      backgroundColor: 'blue',
+      padding: 10,
+      borderRadius: 5,
+      flex: 1,
+      alignItems: 'center',
+      marginHorizontal: 5,
+    },
+    buttonText: {
+      color: 'white',
+      fontSize: 18,
+    },
 });
 
 export default BottomSheet;

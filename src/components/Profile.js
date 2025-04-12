@@ -19,7 +19,7 @@ return(
 <View>
 
 // Profile Start
-<Text style={{textAlign:"center",fontWeight:"bold",fontSize:20,marginTop:60}}>Profile</Text>
+<Text style={{textAlign:"center",fontWeight:"bold",fontSize:24,marginTop:30}}>Profile</Text>
 
 <View style={styles.container2}>
       <Image source={require('../assets/image.png')} style={styles.image} />

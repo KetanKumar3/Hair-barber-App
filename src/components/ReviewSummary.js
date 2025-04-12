@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   value: {
-    fontSize: 20,
+    fontSize: 16,
   },
   bookNowContainer: {
     position: 'absolute',
