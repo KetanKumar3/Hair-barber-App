@@ -25,7 +25,7 @@ const SelectedTimeSlot = () => {
       }
     : {};
 
-  const timeSlots = Array.from({ length: 14 }, (_, i) => {
+  const timeSlots = Array.from({ length: 12 }, (_, i) => {
     const hour = 8 + i;
     const time = `${hour < 10 ? '0' : ''}${hour}:00 ${hour < 12 ? 'AM' : 'PM'}`;
     return time;
@@ -114,21 +114,22 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   timeSlotsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-start',
-    marginBottom:20,
-  },
-  timeSlot: {
-    borderWidth: 2,
-    borderColor: '#ccc',
-    padding: 10,
-    margin: 5,
-    borderRadius: 5,
-    minWidth: 80,
-    alignItems: 'center',
-    fontWeight:"bold",
-  },
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'flex-start',
+      marginBottom:20,
+    },
+    timeSlot: {
+      borderWidth: 2,
+      borderColor: '#ccc',
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      alignItems: 'center',
+      flexGrow: 1,
+      flexBasis: '30%',
+      maxWidth: '40%',
+    },
   selectedTimeSlot: {
     backgroundColor: 'blue',
     borderColor: 'blue',

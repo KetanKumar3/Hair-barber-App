@@ -45,7 +45,7 @@ const ReviewSummary = () => {
             <Text style={styles.value}>$25</Text>
           </View>
         </View>
-        <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 8, marginRight: 20 }}>
+        <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 4, marginRight: 20 }}>
         <TouchableOpacity onPress={() => setVisible(true)}>
           <Text style={{ fontSize: 20, fontWeight: 'bold', color: 'blue' }}>Booking For Someone?</Text>
         </TouchableOpacity>
