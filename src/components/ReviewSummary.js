@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
-import { Text, View, StyleSheet, Dimensions, TouchableOpacity, ScrollView, } from 'react-native';
+import React, { useState } from 'react';
+import { Text, View, StyleSheet, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
 import Modal from 'react-native-modal';
 import BottomSheet from './BottomSheet';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const ReviewSummary = () => {
   const name = "Ketan Kumar";
-
   const [visible, setVisible] = useState(false);
-
   const navigation = useNavigation();
 
   return (
@@ -46,32 +45,34 @@ const ReviewSummary = () => {
           </View>
         </View>
         <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 4, marginRight: 20 }}>
-        <TouchableOpacity onPress={() => setVisible(true)}>
-          <Text style={{ fontSize: 20, fontWeight: 'bold', color: 'blue' }}>Booking For Someone?</Text>
-        </TouchableOpacity>
+          <TouchableOpacity onPress={() => setVisible(true)}>
+            <Text style={{ fontSize: 16, fontWeight: 'semi-bold', color: 'blue' }}>Booking For Someone?</Text>
+          </TouchableOpacity>
         </View>
         <View style={{ backgroundColor: "white" }}>
         </View>
       </ScrollView>
       <View style={styles.bookNowContainer}>
-        <TouchableOpacity  style={styles.bookNowButton}>
+        <TouchableOpacity style={styles.bookNowButton}>
           <Text style={styles.bookNowText}>Continue</Text>
         </TouchableOpacity>
       </View>
 
-      <Modal style={{width:"100%",marginLeft:0,marginBottom:0}} isVisible={visible} onBackdropPress={() => setVisible(false)}>
-       <BottomSheet navigateToReview={() => navigation.navigate("ReviewSummary")} />
-            </Modal>
+      <Modal style={{ width: "100%", marginLeft: 0, marginBottom: 0 }} isVisible={visible} onBackdropPress={() => setVisible(false)}>
+        <BottomSheet closeModal={() => setVisible(false)} />
+      </Modal>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth:3,
-    borderColor:"#E0E3E7",
+    borderWidth: 3,
+    borderColor: "#E0E3E7",
     borderRadius: 20,
-    margin: 20,
+    marginHorizontal: 20,
+    marginTop: 20,
+    marginBottom: 10,
     padding: 25,
     gap: 8,
   },
@@ -81,28 +82,28 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   label: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
     marginRight: 5,
   },
   value: {
     fontSize: 16,
+    fontWeight: "semi-bold",
   },
   bookNowContainer: {
     position: 'absolute',
     bottom: 0,
     width: '100%',
     backgroundColor: 'white',
-    height:100,
+    height: 100,
   },
   bookNowButton: {
     backgroundColor: 'blue',
     padding: 15,
-    marginTop:15,
+    marginTop: 15,
     alignItems: 'center',
     width: screenWidth - 40,
     marginHorizontal: 20,
-
     borderRadius: 20,
   },
   bookNowText: {
